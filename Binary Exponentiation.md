@@ -13,7 +13,7 @@ The final result is 4×16=64. This is because 2^10=(2^5)2=322=64.
 As you can see, the binary exponentiation algorithm is very efficient. It only requires a constant number of multiplications, regardless of the size of the exponent. This makes it much faster than the naive algorithm for calculating powers of large numbers.
 
 
-Binary exponentiation can be used to calculate the power of a number to any exponent, but it is particularly useful for calculating powers of large numbers. This is because the number of multiplications required by binary exponentiation is proportional to the logarithm of the exponent, rather than the exponent itself. For example, to calculate 21000 using binary exponentiation, we would only need to perform 30 multiplications. This is much faster than the naive algorithm, which would require 1000 multiplications.
+Binary exponentiation can be used to calculate the power of a number to any exponent, but it is particularly useful for calculating powers of large numbers. This is because the number of multiplications required by binary exponentiation is proportional to the logarithm of the exponent, rather than the exponent itself. For example, to calculate 2^1000 using binary exponentiation, we would only need to perform 30 multiplications. This is much faster than the naive algorithm, which would require 1000 multiplications.
 
 Binary exponentiation is a powerful algorithm that has many applications. It is used in cryptography, number theory, and other areas of mathematics. It is also used in some computer algorithms, such as the quicksort algorithm.
 
