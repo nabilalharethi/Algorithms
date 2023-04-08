@@ -2,7 +2,16 @@
 # Binary Exponentiation
 Binary exponentiation is a technique for calculating the power of a number to a large exponent. It is a recursive algorithm that works by repeatedly squaring the base number and then multiplying the result by the exponent. The algorithm is efficient because it only requires a constant number of multiplications, regardless of the size of the exponent.
 
-To calculate an using binary exponentiation, we first write n in binary. Then, we repeatedly square a and multiply the result by the binary digits of n, starting from the right. For example, to calculate 210, we would write 10 in binary as 1010. Then, we would square 2 twice, getting 4. Then, we would multiply 4 by the first binary digit of n, which is 1, getting 4. Finally, we would multiply 4 by the second binary digit of n, which is 0, getting 4. The result is 210=1024.
+To understand how the algorithm works, let's consider an example. Suppose we want to calculate 210 using binary exponentiation. We would first write 10 in binary as 1010. Then, we would repeatedly square 2 and multiply the result by the binary digits of n, starting from the right.
+
+The first binary digit of n is 1, so we would square 2 and multiply the result by 1. This gives us 4.
+
+The next binary digit of n is 0, so we would square 4 and multiply the result by 0. This gives us 16.
+
+The final result is 4×16=64. This is because 210=(25)2=322=64.
+
+As you can see, the binary exponentiation algorithm is very efficient. It only requires a constant number of multiplications, regardless of the size of the exponent. This makes it much faster than the naive algorithm for calculating powers of large numbers.
+
 
 Binary exponentiation can be used to calculate the power of a number to any exponent, but it is particularly useful for calculating powers of large numbers. This is because the number of multiplications required by binary exponentiation is proportional to the logarithm of the exponent, rather than the exponent itself. For example, to calculate 21000 using binary exponentiation, we would only need to perform 30 multiplications. This is much faster than the naive algorithm, which would require 1000 multiplications.
 
